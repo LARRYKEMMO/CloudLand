@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
@@ -18,13 +19,8 @@ public class DoorScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (gavinmovement.goal > 0)
-        {
-            Doggy();
-
-        }
-       
+    {        
+        Doggy();
 
     }
 
@@ -32,9 +28,18 @@ public class DoorScript : MonoBehaviour
     {
         if (Down == false)
         {
-            if (Player.transform.position.x >= gameObject.transform.position.x - 2f && Player.transform.position.x <= gameObject.transform.position.x + 2f)
+            if (Player.transform.position.x >= gameObject.transform.position.x && Player.transform.position.x <= gameObject.transform.position.x + 2f)
             {
-                Down = true;
+                if (gavinmovement.goal > 0)
+                {
+                    Down = true;
+                    //Doggy();
+
+                }
+                else
+                {
+                    SceneManager.LoadScene("SS1");
+                }
             }
         }
 
