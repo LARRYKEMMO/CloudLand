@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LetterUnboxing : MonoBehaviour
 {
+    public Image spriteA;
+    public Image spriteB;
+    public Image spriteC;
+    public Image spriteD;
+    public Image spriteE;
+    private Image MainSprite;
+    private Color MainColor;
     public float moveSpeed = 0.5f;
     public int numberOfObjects = 10;
     public float radius = 0.5f;
@@ -18,7 +26,7 @@ public class LetterUnboxing : MonoBehaviour
         //FollowPlayer = FindAnyObjectByType<FollowPlayerScript>();
         Stars = new List<GameObject>();
         soundManager = FindObjectOfType<SoundManager>();
-
+        
     }
 
     // Update is called once per frame
@@ -31,8 +39,42 @@ public class LetterUnboxing : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
+            if(gameObject.tag == "LetterA")
+            {
+                MainSprite = spriteA.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
+            else if (gameObject.tag == "LetterB")
+            {
+                MainSprite = spriteB.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
+            else if (gameObject.tag == "LetterC")
+            {
+                MainSprite = spriteC.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
+            else if (gameObject.tag == "LetterD")
+            {
+                MainSprite = spriteD.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
+            else if (gameObject.tag == "LetterE")
+            {
+                MainSprite = spriteE.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
 
-            
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 

@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2487,6 +2487,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteA
+      value: 
+      objectReference: {fileID: 1925783004}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteB
+      value: 
+      objectReference: {fileID: 2065614403}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteC
+      value: 
+      objectReference: {fileID: 1362206563}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteD
+      value: 
+      objectReference: {fileID: 14047578}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteE
+      value: 
+      objectReference: {fileID: 1695386212}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: FollowPlayer
       value: 
       objectReference: {fileID: 1966556912}
@@ -2501,6 +2521,10 @@ PrefabInstance:
     - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_Name
       value: LetterBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: m_TagString
+      value: LetterE
       objectReference: {fileID: 0}
     - target: {fileID: 830155416425422707, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_RootOrder
@@ -2629,6 +2653,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteA
+      value: 
+      objectReference: {fileID: 1925783004}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteB
+      value: 
+      objectReference: {fileID: 2065614403}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteC
+      value: 
+      objectReference: {fileID: 1362206563}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteD
+      value: 
+      objectReference: {fileID: 14047578}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteE
+      value: 
+      objectReference: {fileID: 1695386212}
     - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: FollowPlayer
       value: 
@@ -2954,6 +2998,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteA
+      value: 
+      objectReference: {fileID: 1925783004}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteB
+      value: 
+      objectReference: {fileID: 2065614403}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteC
+      value: 
+      objectReference: {fileID: 1362206563}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteD
+      value: 
+      objectReference: {fileID: 14047578}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteE
+      value: 
+      objectReference: {fileID: 1695386212}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: FollowPlayer
       value: 
       objectReference: {fileID: 1216794567}
@@ -2968,6 +3032,10 @@ PrefabInstance:
     - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_Name
       value: LetterBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: m_TagString
+      value: LetterC
       objectReference: {fileID: 0}
     - target: {fileID: 830155416425422707, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_RootOrder
@@ -28052,6 +28120,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteA
+      value: 
+      objectReference: {fileID: 1925783004}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteB
+      value: 
+      objectReference: {fileID: 2065614403}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteC
+      value: 
+      objectReference: {fileID: 1362206563}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteD
+      value: 
+      objectReference: {fileID: 14047578}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteE
+      value: 
+      objectReference: {fileID: 1695386212}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: FollowPlayer
       value: 
       objectReference: {fileID: 1898894334}
@@ -28062,6 +28150,10 @@ PrefabInstance:
     - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_Name
       value: LetterBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: m_TagString
+      value: LetterB
       objectReference: {fileID: 0}
     - target: {fileID: 830155416425422707, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_RootOrder
@@ -28992,7 +29084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30090,7 +30182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30993,7 +31085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -31219,6 +31311,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteA
+      value: 
+      objectReference: {fileID: 1925783004}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteB
+      value: 
+      objectReference: {fileID: 2065614403}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteC
+      value: 
+      objectReference: {fileID: 1362206563}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteD
+      value: 
+      objectReference: {fileID: 14047578}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: spriteE
+      value: 
+      objectReference: {fileID: 1695386212}
+    - target: {fileID: 830155416425422605, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: FollowPlayer
       value: 
       objectReference: {fileID: 2056803535}
@@ -31233,6 +31345,10 @@ PrefabInstance:
     - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_Name
       value: LetterBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
+      propertyPath: m_TagString
+      value: LetterD
       objectReference: {fileID: 0}
     - target: {fileID: 830155416425422707, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_RootOrder
@@ -31524,7 +31640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.34117648}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

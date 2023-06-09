@@ -7,6 +7,10 @@ TagManager:
   - Platform
   - LetterA
   - SavePosition
+  - LetterE
+  - LetterD
+  - LetterC
+  - LetterB
   layers:
   - Default
   - TransparentFX
