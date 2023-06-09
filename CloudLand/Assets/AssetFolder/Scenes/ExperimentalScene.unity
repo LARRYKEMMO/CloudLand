@@ -807,10 +807,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LetterBlock
       objectReference: {fileID: 0}
-    - target: {fileID: 830155416425422705, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 830155416425422707, guid: cde9e4e835ff5bd4e9e51bb7961ca7a2, type: 3}
       propertyPath: m_RootOrder
       value: 1
