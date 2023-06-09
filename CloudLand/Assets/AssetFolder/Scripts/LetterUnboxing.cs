@@ -9,13 +9,13 @@ public class LetterUnboxing : MonoBehaviour
     public float radius = 0.5f;
     public GameObject StarPrefab;
     private GameObject Star;
-    private FollowPlayerScript FollowPlayer;
+    public FollowPlayerScript FollowPlayer;
     private List<GameObject> Stars;
     private SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
-        FollowPlayer = FindAnyObjectByType<FollowPlayerScript>();
+        //FollowPlayer = FindAnyObjectByType<FollowPlayerScript>();
         Stars = new List<GameObject>();
         soundManager = FindObjectOfType<SoundManager>();
 
