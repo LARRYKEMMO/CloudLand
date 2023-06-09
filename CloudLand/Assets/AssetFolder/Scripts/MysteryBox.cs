@@ -64,7 +64,7 @@ public class MysteryBox : MonoBehaviour
                 // Enable gravity after launching
                 Mystery.GetComponent<Rigidbody2D>().gravityScale = 1f;
                 LaunchCounter++;
-                Destroy(Mystery, 2f);
+                Destroy(Mystery, 3f);
             }
         }
     }

@@ -167,4 +167,12 @@ public class movement : MonoBehaviour
             SpawnPoint = collision.transform.position;
         }
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.CompareTag("PowerUp"))
+    //    {
+
+    //    }
+    //}
 }
