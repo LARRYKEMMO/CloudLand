@@ -10,6 +10,7 @@ public class LetterUnboxing : MonoBehaviour
     public Image spriteC;
     public Image spriteD;
     public Image spriteE;
+    public Image spriteF;
     private Image MainSprite;
     private Color MainColor;
     public float moveSpeed = 0.5f;
@@ -70,6 +71,13 @@ public class LetterUnboxing : MonoBehaviour
             else if (gameObject.tag == "LetterE")
             {
                 MainSprite = spriteE.GetComponent<Image>();
+                MainColor = MainSprite.color;
+                MainColor.a = 1f;
+                MainSprite.color = MainColor;
+            }
+            else if (gameObject.tag == "LetterF")
+            {
+                MainSprite = spriteF.GetComponent<Image>();
                 MainColor = MainSprite.color;
                 MainColor.a = 1f;
                 MainSprite.color = MainColor;

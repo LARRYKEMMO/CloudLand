@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5722672848101223031}
   - component: {fileID: 7088334248627091242}
   - component: {fileID: 768756798028139227}
+  - component: {fileID: 2476034506592240455}
   m_Layer: 0
   m_Name: MysteryStar 1
   m_TagString: PowerUp
@@ -142,3 +143,15 @@ PolygonCollider2D:
       - {x: -0.02988553, y: 0.08712256}
       - {x: -0.4306143, y: 0.08985947}
       - {x: -0.14001614, y: -0.11263245}
+--- !u!114 &2476034506592240455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51237007974074704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841e07fb6bc825140a4afdd2379c3378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

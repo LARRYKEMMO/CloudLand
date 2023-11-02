@@ -12,7 +12,7 @@ public class MysteryBox : MonoBehaviour
     public GameObject MysteryFeatherPrefab;
     private GameObject MysteryPrefab;
     private float launchAngle = 45;
-    private float launchSpeed = 5f;
+    private float launchSpeed = 4f;
     private int LaunchCounter = 0;
     private Vector3 SpawnPosition;
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public class MysteryBox : MonoBehaviour
         SpawnPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1.5f, gameObject.transform.position.z);
         SR = GetComponent<SpriteRenderer>();
         soundManager = FindObjectOfType<SoundManager>();
+        
     }
 
     // Update is called once per frame
@@ -42,7 +43,7 @@ public class MysteryBox : MonoBehaviour
 
             if (LaunchCounter < 1)
             {
-                Debug.Log("Instantiate");
+                //Debug.Log("Instantiate");
                 SR.sprite = TouchedSprite;
 
                 Choice = Random.Range(0, 2);
@@ -64,7 +65,7 @@ public class MysteryBox : MonoBehaviour
                 // Enable gravity after launching
                 Mystery.GetComponent<Rigidbody2D>().gravityScale = 1f;
                 LaunchCounter++;
-                Destroy(Mystery, 3f);
+                //Destroy(Mystery, 5f);
             }
         }
     }

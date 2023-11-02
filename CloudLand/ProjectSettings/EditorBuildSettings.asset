@@ -9,12 +9,54 @@ EditorBuildSettings:
     path: Assets/AssetFolder/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/AssetFolder/Scenes/StatsScene.unity
+    guid: 1f233963ccbc5ad44b0f4677d08bf488
+  - enabled: 1
     path: Assets/AssetFolder/Scenes/LoadingScene.unity
     guid: 4dc3984a4864c364793e2d96c5ab57f5
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/2LoadingScene.unity
+    guid: 54e6987b755d5e74b8fe1e45960dd33f
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/3LoadingScene.unity
+    guid: 34bbd4ef61fd9594f9ccf7053669e72d
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/4LoadingScene.unity
+    guid: 36dd2d0df7004764690f44eb0b5c776c
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/5LoadingScene.unity
+    guid: a9e0d4f6e8843394bb9b3cee90d011a0
   - enabled: 1
     path: Assets/AssetFolder/Scenes/level1.unity
     guid: ef1e7ff723c0d9547a8d9fe2bf4e5630
   - enabled: 1
+    path: Assets/AssetFolder/Scenes/level2.unity
+    guid: 3bf129ba5bd29514d8d5858c75f87074
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/level3.unity
+    guid: 82c6134445fce7549ba9177860e3848e
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/level4.unity
+    guid: 09414447c62167f48bcdbdaa69b31bd2
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/level5.unity
+    guid: 274f4016bbf6c2c4083e9ad325ae9f24
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/FinalLevel.unity
+    guid: 9a5312ae5e72f9f47ad4abdbe3e69d4b
+  - enabled: 1
     path: Assets/AssetFolder/Scenes/SS1.unity
     guid: ba968b87777525946acd77902bc09eef
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/SS2.unity
+    guid: cae059a4c60748b42be78d8ab7355aed
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/SS3.unity
+    guid: 869276c45f8caa049a190dae82f3c76d
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/SS4.unity
+    guid: ce267a7f8c4d5ff4ab58aaaa8c9e2227
+  - enabled: 1
+    path: Assets/AssetFolder/Scenes/SS5.unity
+    guid: 57e12635f6cf4d141a14d1480d86958b
   m_configObjects: {}

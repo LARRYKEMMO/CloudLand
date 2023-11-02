@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
@@ -49,7 +50,7 @@ public class SSS1 : MonoBehaviour
     public float moveSpeed = 3f;
     public int numberOfObjects = 10;
     public float radius = 0.5f;
-
+    public GameObject Truck;
     public GameObject Dog;
     private Animator Anim;
     private GameObject Bone;
@@ -65,7 +66,48 @@ public class SSS1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Stars.Count);
+        Debug.Log("CorrectCounter: " + correctCounter);
+
+        if (SceneManager.GetActiveScene().name == "SS1")
+        {
+            if (correctCounter == 5)
+            {
+                Invoke("LoadScene2", 3f);
+            }
+        }
+
+        else if (SceneManager.GetActiveScene().name == "SS2")
+        {
+            if (correctCounter == 5)
+            {
+                Invoke("LoadScene3", 3f);
+            }
+        }
+
+        else if (SceneManager.GetActiveScene().name == "SS3")
+        {
+            if (correctCounter == 5)
+            {
+                Invoke("LoadScene4", 3f);
+            }
+        }
+
+        else if (SceneManager.GetActiveScene().name == "SS4")
+        {
+            if (correctCounter == 5)
+            {
+                Invoke("LoadScene5", 3f);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "SS5")
+        {
+            if (correctCounter == 6)
+            {
+                PlayerPrefs.SetInt("UNLOCK", 1);
+                Invoke("LoadSceneFinal", 3f);
+            }
+        }
+
         if(PlayCounter == 2)
         {
             if(TempIndexbutton == TempIndexLetter)
@@ -96,7 +138,7 @@ public class SSS1 : MonoBehaviour
             {
                 Destroy(Bone, 1f);
                 Anim.SetBool("Eat", true);
-                Invoke("ResetAnimation", 2f);
+                Invoke("ResetAnimation", 1f);
 
             }
         }
@@ -305,6 +347,7 @@ public class SSS1 : MonoBehaviour
             Star = Instantiate(StarPrefab, spawnPosition, Quaternion.identity);
             Stars.Add(Star);
             SetMovementDirection(Star, angle);
+            gameObject.GetComponent<AudioSource>().Play();
             Destroy(Stars[i], 2f);
             if(i == numberOfObjects - 1)
             {
@@ -345,5 +388,32 @@ public class SSS1 : MonoBehaviour
         Anim.SetBool("Eat", false);
         PlayCounter = 0;
 
+    }
+
+    private void LoadSceneFinal()
+    {
+        Dog.SetActive(false);
+        Truck.SetActive(true);
+        //SceneManager.LoadScene("FinalLevel");
+    }
+
+    private void LoadScene2()
+    {
+        SceneManager.LoadScene("2LoadingScene");
+    }
+
+    private void LoadScene3()
+    {
+        SceneManager.LoadScene("3LoadingScene");
+    }
+
+    private void LoadScene4()
+    {
+        SceneManager.LoadScene("4LoadingScene");
+    }
+
+    private void LoadScene5()
+    {
+        SceneManager.LoadScene("5LoadingScene");
     }
 }

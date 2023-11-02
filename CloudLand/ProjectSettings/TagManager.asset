@@ -12,6 +12,9 @@ TagManager:
   - LetterC
   - LetterB
   - PowerUp
+  - RedDummy
+  - Shield
+  - LetterF
   layers:
   - Default
   - TransparentFX

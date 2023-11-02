@@ -17,10 +17,21 @@ public class MainMenuScript : MonoBehaviour
     private float fadeTimer = 0;
     public Image FadeImage;
     private Color FadeColor;
+    private int UnlockIndex;
+    public GameObject StatButton;
     // Start is called before the first frame update
     void Start()
     {
         FadeColor = Color.black;
+        UnlockIndex = PlayerPrefs.GetInt("UNLOCK");
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            if (UnlockIndex == 1)
+            {
+                StatButton.SetActive(true);
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -59,5 +70,17 @@ public class MainMenuScript : MonoBehaviour
         GoObject = Instantiate(GoPrefab, gameObject.transform.position, Quaternion.identity);
         StartMoving = true;
         FadeImage.gameObject.SetActive(true);
+    }
+
+    public void MoveToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        //Debug.Log("ButtonPressed");
+    }
+
+    public void MoveToStats()
+    {
+        SceneManager.LoadScene("StatsScene");
+        //Debug.Log("ButtonPressed");
     }
 }

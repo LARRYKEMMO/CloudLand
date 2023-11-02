@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SmallEnemyMovement : MonoBehaviour
 {
-   // public GameObject eyes;
+    // public GameObject eyes;
+    private movement MoveScript;
     public GameObject Left;
     public GameObject Right;
     private Vector3 left;
@@ -15,13 +16,16 @@ public class SmallEnemyMovement : MonoBehaviour
     private Animator animator;
     public bool Dead = false;
     private bool Walk = false;
+    private PolygonCollider2D childCollider;
+    private int KillCounter = 0;
     // Start is called before the first frame update
     void Start()
     {
+        MoveScript = FindAnyObjectByType<movement>();
         animator = GetComponent<Animator>();
         left = Left.transform.position;
         right = Right.transform.position;   
-
+        childCollider = GetComponentInChildren<PolygonCollider2D>();
     }
 
     // Update is called once per frame
@@ -62,7 +66,6 @@ public class SmallEnemyMovement : MonoBehaviour
         {
             animator.enabled = false;
 //            gameObject.transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
-            Debug.Log("SpriteChanged");
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, -2f, 0f);
         }
     }
@@ -78,6 +81,39 @@ public class SmallEnemyMovement : MonoBehaviour
                 trueCounter ++;
             }
         }
+
+        if(collision.collider.tag == "Player")
+        {
+            //Debug.Log("KILL GAVIN entered");
+            //Debug.Log(gameObject.GetComponent<BoxCollider2D>().isTrigger);
+
+            //if (Dead == false)
+            //{
+            //    MoveScript.ActivateTrigger2();
+            //    Debug.Log("KILL GAVIN");
+            //}
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Shield"))
+        {
+            KillDummy();
+        }
+    }
+
+    public void KillDummy()
+    {
+        if(KillCounter < 1)
+        {
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            childCollider.isTrigger = true;
+            gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+            Dead = true;
+            KillCounter++;
+        }
+        
     }
 
 }

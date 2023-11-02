@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5331473204808066989}
   - component: {fileID: 6079578507045372049}
   - component: {fileID: 5819297351655308769}
+  - component: {fileID: 6266382876370562243}
   m_Layer: 0
   m_Name: MysteryFeather
   m_TagString: Untagged
@@ -147,3 +148,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6266382876370562243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514038607712905204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644d915c92d394a44b537367ee0cd45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

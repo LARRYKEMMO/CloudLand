@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class BeetleSSpot : MonoBehaviour
 {
+    private movement MoveScript;
     private BeetleMovement BeetleMovementScript;
     // Start is called before the first frame update
     void Start()
     {
+        MoveScript = FindAnyObjectByType<movement>();
         BeetleMovementScript = FindObjectOfType<BeetleMovement>();
     }
 
@@ -21,8 +23,9 @@ public class BeetleSSpot : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            Debug.Log("Beetle Enemy Dead");
+            //Debug.Log("Beetle Enemy Dead");
             BeetleMovementScript.Dead = true;
+            MoveScript.DeActivateTrigger();
             BeetleMovementScript.GetComponent<BoxCollider2D>().isTrigger = true;
             gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         }
